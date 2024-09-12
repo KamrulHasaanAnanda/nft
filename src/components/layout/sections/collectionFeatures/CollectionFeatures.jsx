@@ -12,7 +12,7 @@ function CollectionFeatures() {
                 Collection Featured NFTs
             </h4>
 
-            <div className='flex justify-center items-center gap-4 my-6'>
+            <div className='flex justify-between items-center gap-4 my-6'>
 
                 <Collections image={unsplash} />
                 <Collections image={unsplash} />

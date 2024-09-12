@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components {
+  .nft-list-item {
+    @apply text-[#3D3D3D] font-dm-sans text-sm font-normal leading-[200%] cursor-pointer hover:text-[#3D00B7] transition-colors duration-300;
+  }
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
