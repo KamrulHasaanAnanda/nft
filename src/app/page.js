@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeaderComponent from "../components/layout/HeaderComponent";
 import TopSection from "@/components/layout/sections/topSection/TopSection";
 import NoticeSection from "@/components/layout/sections/noticeSection/NoticeSection";
+import CollectionSection from "@/components/layout/sections/collectionSection/CollectionSection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeaderComponent />
       <TopSection />
       <NoticeSection />
+      <CollectionSection />
 
 
 
