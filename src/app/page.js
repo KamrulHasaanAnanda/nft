@@ -3,6 +3,7 @@ import HeaderComponent from "../components/layout/HeaderComponent";
 import TopSection from "@/components/layout/sections/topSection/TopSection";
 import NoticeSection from "@/components/layout/sections/noticeSection/NoticeSection";
 import CollectionSection from "@/components/layout/sections/collectionSection/CollectionSection";
+import CollectionFeatures from "@/components/layout/sections/collectionFeatures/CollectionFeatures";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <TopSection />
       <NoticeSection />
       <CollectionSection />
+      <CollectionFeatures />
 
 
 
