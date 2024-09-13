@@ -8,16 +8,14 @@ import avatar from '../../../../../public/img/avatar.svg'
 import { Button } from '@/components/ui/button'
 function Collections({ image }) {
     return (
-        <div>
-            <div className='flex gap-3 items-center'>
+        <div className='w-full sm:w-1/3'>
+            <div className='flex gap-3 items-center  sm:flex-col lg:flex-row'>
                 <Image src={image} alt='Unsplash image' width={265} height={272} />
-                <div className='flex flex-col gap-3'>
+                <div className='flex flex-col sm:flex-row  lg:flex-col gap-3'>
                     <Image src={unsplash9} alt='Unsplash image' />
                     <Image src={unsplash10} alt='Unsplash image' />
                     <Image src={unsplash11} alt='Unsplash image' />
-
                 </div>
-
             </div>
 
 
@@ -26,7 +24,7 @@ function Collections({ image }) {
             </h5>
 
             <div className='flex justify-between items-center'>
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-2 sm:flex-wrap md:flex-nowrap'>
                     <Image src={avatar} alt='avatar' height={28} width={28} />
                     <p className='text-black font-dm-sans text-sm font-normal'>
                         by Arkhan

@@ -14,8 +14,8 @@ export default function Home() {
       <HeaderComponent />
       {/* <TopSection />
       <NoticeSection />
-      <CollectionSection />
-      <CollectionFeatures /> */}
+      <CollectionSection /> */}
+      <CollectionFeatures />
       <CreateSellNftsSection />
       <DiscoverSection />
       <Footer />
