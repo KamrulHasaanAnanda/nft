@@ -70,57 +70,33 @@ function DiscoverSection() {
 
     ]
     return (
-        <section className="bg-[rgba(217,224,236,0.20)] p-16 backdrop-blur-[25px]">
+        <section className="bg-[rgba(217,224,236,0.20)] py-16 px-5 sm:px-10 md:px-16 backdrop-blur-[25px]">
 
             <h4 className='text-black font-integral text-[34px] font-bold'>
                 Discover more NFTs
             </h4>
 
 
-            <div className='my-4 flex justify-between items-center'>
-                <div className='flex gap-4 items-center'>
-                    <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#fff] font-dm-sans text-xs font-normal bg-[#2639ED] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
-
+            <div className='my-4 flex flex-col md:flex-row justify-between items-start md:items-center gap-4'>
+                <div className='flex flex-wrap gap-2 md:gap-4 items-center'>
+                    <Button className="flex justify-center items-center px-3 md:px-5 py-2 md:py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px] text-[#fff] font-dm-sans text-xs font-normal bg-[#2639ED] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
                         All Categories
                     </Button>
 
-
-                    <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
-
-                        Art
-                    </Button>
-
-                    <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
-
-                        Celebrities
-                    </Button>
-                    <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
-
-                        Gaming
-                    </Button>
-                    <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
-
-                        Sport
-                    </Button>
-                    <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
-
-                        Music
-                    </Button>
-                    <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
-
-                        Crypto
-                    </Button>
+                    {['Art', 'Celebrities', 'Gaming', 'Sport', 'Music', 'Crypto'].map((category) => (
+                        <Button key={category} className="flex justify-center items-center px-3 md:px-5 py-2 md:py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px] text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
+                            {category}
+                        </Button>
+                    ))}
                 </div>
 
-                <Button className="flex justify-center items-center  px-5 py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px]  text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
+                <Button className="flex justify-center items-center px-3 md:px-5 py-2 md:py-2.5 gap-[4.584px] flex-shrink-0 rounded-[100px] text-[#000] font-dm-sans text-xs font-normal bg-[#F5F5F5] hover:bg-[#2639ED] hover:text-white transition duration-300 ease-in-out">
                     <Image src={filter} alt='filter' />
-                    <p>
-                        All Filters
-                    </p>
+                    <p>All Filters</p>
                 </Button>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4'>
 
                 {
                     discoverCarts.map(discoverCart => (

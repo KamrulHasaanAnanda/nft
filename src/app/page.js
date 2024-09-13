@@ -10,17 +10,17 @@ import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <div className=" px-5 sm:px-10 md:px-16">
+    <>
       <HeaderComponent />
       {/* <TopSection />
       <NoticeSection />
       <CollectionSection />
       <CollectionFeatures />
-      <CreateSellNftsSection />
-      <DiscoverSection /> */}
+      <CreateSellNftsSection /> */}
+      <DiscoverSection />
       <Footer />
 
 
-    </div>
+    </>
   );
 }

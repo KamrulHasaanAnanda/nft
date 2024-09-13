@@ -11,7 +11,7 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 function Footer() {
     return (
-        <footer className='bg-white py-16 flex items-start justify-between gap-6 flex-wrap lg:flex-nowrap'>
+        <footer className='bg-white px-5 sm:px-10 md:px-16  py-16 flex items-start justify-between gap-6 flex-wrap lg:flex-nowrap'>
 
             <div className=' w-full sm:w-1/2 lg:w-1/3'>
                 <h4 className="text-[#000] font-integral text-2xl font-bold">
