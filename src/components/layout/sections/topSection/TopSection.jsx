@@ -9,15 +9,15 @@ import NFTCard from './NftCard'
 
 function TopSection() {
     return (
-        <section className='p-16 w-full flex gap-12 justify-between items-stretch'>
+        <section className=' py-16 px-3 sm:px-10 md:px-16 w-full flex gap-12 justify-between items-stretch flex-wrap md:flex-nowrap'>
 
-            <div className='w-[60%]'>
-                <h1 className='text-black font-integral text-[40px] font-normal tracking-[2px]'>
+            <div className=' md:w-[40%] lg:w-[60%]'>
+                <h1 className='text-black font-integral text-3xl lg:text-[40px] font-normal tracking-[2px]'>
 
                     Discover, and collect Digital Art  NFTs
                 </h1>
 
-                <p className='text-[#565656] font-dm-sans text-xl font-normal leading-[160%] my-6'>
+                <p className='text-[#565656] font-dm-sans text-lg lg:text-xl font-normal leading-[160%] my-6'>
                     Digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, Sell, and discover exclusive digital assets.
                 </p>
 
@@ -35,7 +35,7 @@ function TopSection() {
 
                 </div >
             </div >
-            <div className='w-[40%] relative '>
+            <div className=' md:w-[60%] lg:w-[40%]   '>
                 <NFTCard />
             </div>
         </section >
