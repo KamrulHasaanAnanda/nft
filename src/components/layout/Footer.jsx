@@ -21,7 +21,7 @@ const Footer = () => {
             <div className='w-full sm:w-1/2 lg:w-1/3'>
                 <h4 className="text-[#000] font-integral text-2xl font-bold">NFters</h4>
                 <p className='text-[#565656] font-dm-sans text-sm font-normal leading-[160%] my-4'>
-                    The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.
+                    The world&apos;s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.
                 </p>
                 <div className='flex gap-5'>
                     {socialIcons.map((icon, index) => (
