@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchIcon from '../../../public/img/SearchIcon.svg'
+import SearchIcon from '../../../../public/img/SearchIcon.svg'
 import Image from 'next/image'
 function HeaderSearchInput() {
     return (

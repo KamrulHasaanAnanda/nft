@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeaderComponent from "../components/layout/HeaderComponent";
+import HeaderComponent from "../components/layout/header/HeaderComponent";
 import TopSection from "@/components/layout/sections/topSection/TopSection";
 import NoticeSection from "@/components/layout/sections/noticeSection/NoticeSection";
 import CollectionSection from "@/components/layout/sections/collectionSection/CollectionSection";
@@ -10,17 +10,17 @@ import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="px-10 md:px-16">
       <HeaderComponent />
-      <TopSection />
+      {/* <TopSection />
       <NoticeSection />
       <CollectionSection />
       <CollectionFeatures />
       <CreateSellNftsSection />
-      <DiscoverSection />
+      <DiscoverSection /> */}
       <Footer />
 
 
-    </>
+    </div>
   );
 }

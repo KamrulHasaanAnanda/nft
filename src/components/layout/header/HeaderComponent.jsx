@@ -1,19 +1,19 @@
 import React from 'react'
-import HeaderSearchInput from './header/HeaderSearchInput'
-import { Button } from '../ui/button'
-// import { Menu } from 'lucide-react'
+import HeaderSearchInput from './HeaderSearchInput'
+import { Button } from '../../ui/button'
+import HeaderMenu from './HeaderMenu'
 
 
 const HeaderComponent = () => {
     const navItems = ['Marketplace', 'Resource', 'About']
 
     return (
-        <header className="w-full h-20 flex justify-between items-center gap-3 px-16 py-2 border-b border-[#EFEFEF]">
+        <header className="w-full h-20 flex justify-between items-center gap-3 py-2 border-b border-[#EFEFEF]">
             <h1 className="text-[#3D00B7] font-integral text-2xl font-bold">
                 NFters
             </h1>
 
-            <nav>
+            <nav className='hidden md:block'>
                 <ul className="flex items-center gap-7 w-1/3">
                     {navItems.map((item) => (
                         <li key={item}>{item}</li>
@@ -21,7 +21,7 @@ const HeaderComponent = () => {
                 </ul>
             </nav>
 
-            <div className="flex items-center gap-3 lg:w-1/2 justify-end">
+            <div className=" items-center gap-3 lg:w-1/2 justify-end hidden md:flex">
                 <HeaderSearchInput />
                 <Button
                     className="rounded-[60px] bg-[#3D00B7] text-white font-dm-sans text-sm font-bold leading-none tracking-[0.56px] h-[50px] w-24 hover:bg-[#2A0080] hover:shadow-lg"
@@ -34,6 +34,7 @@ const HeaderComponent = () => {
                     Connect Wallet
                 </Button>
             </div>
+            <HeaderMenu navItems={navItems} />
         </header>
     )
 }
