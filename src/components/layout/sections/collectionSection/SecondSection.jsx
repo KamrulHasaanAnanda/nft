@@ -10,7 +10,7 @@ import unsplash6 from '../../../../../public/img/unsplash6.svg'
 import ThirdSectionTopCollector from './ThirdSectionTopCollector'
 function SecondSection() {
     return (
-        <aside className='w-[25%]'>
+        <aside className=' w-full lg:w-[25%]'>
             <h5 className='text-black font-integral text-xl font-bold'>
                 Top Collections over
             </h5>

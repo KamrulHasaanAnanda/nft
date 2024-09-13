@@ -7,8 +7,8 @@ import SliderSection from './SliderSection'
 
 const FirstSection = () => {
     return (
-        <div className='flex items-start w-[75%] gap-6 border-r border-[#ECECEC] pr-3'>
-            <div className='w-1/2'>
+        <div className='flex items-start w-full lg:w-[75%] flex-wrap md:flex-nowrap gap-6 lg:border-r border-[#ECECEC] pr-3 '>
+            <div className=' w-full md:w-1/2'>
                 <Image src={unsplash} alt='Unsplash image' className='rounded-[24px] aspect-square ' />
 
                 <div className='flex justify-between items-center my-4'>

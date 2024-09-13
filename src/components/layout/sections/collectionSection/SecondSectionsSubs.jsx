@@ -5,22 +5,22 @@ import { Button } from '@/components/ui/button'
 function SecondSectionsSubs({ image, title, eImage, active }) {
     return (
         <div className='flex items-start gap-2 mb-5'>
-            <Image src={image} alt='image' />
+            <Image src={image} alt='image' className='aspect-square' />
             <div>
-                <h4 className='text-black font-dm-sans text-xl font-bold'>
+                <h4 className='text-black font-dm-sans text-xl font-bold tracking-tighter	'>
                     {title}
                 </h4>
 
-                <div className='flex gap-3 my-3  '>
+                <div className='flex gap-2 my-3  '>
                     <Image src={avatar} alt='avatar' width={34} height={34} />
-                    <div className='flex flex-wrap justify-between gap-3'>
+                    <div className='flex  justify-between gap-2'>
                         <div className='rounded-[6px] min-w-24 gap-2 cursor-pointer h-9 border border-[#00AC4F] flex justify-center items-center'>
                             <Image src={eImage} alt='eImage' />
                             <p className='text-[#00AC4F] font-dm-sans text-xs font-bold'>
                                 0.25 ETH
                             </p>
                         </div>
-                        <p className='text-[#757575] font-dm-sans text-sm font-normal'>
+                        <p className='text-[#757575] font-dm-sans text-xs font-normal block md:hidden lg:block'>
                             1 of 8
                         </p>
 
