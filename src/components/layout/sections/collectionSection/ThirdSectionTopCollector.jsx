@@ -4,10 +4,11 @@ import verify from '../../../../../public/img/verify.svg'
 import ethiriamBlack from '../../../../../public/img/ethiriamBlack.svg'
 
 
-function ThirdSectionTopCollector({ key, image, verified, name, value, positiveVal, positive }) {
+function ThirdSectionTopCollector({ indexKey, image, verified, name, value, positiveVal, positive }) {
+
     return (
         <div class="flex gap-4 items-center border-b border-[#F0F0F0] pb-3 mt-5">
-            <h4 className='text-black text-center font-dm-sans text-2xl font-bold leading-[103%] tracking-[-0.6px]'>{key}</h4>
+            <h4 className='text-black text-center font-dm-sans text-2xl font-bold leading-[103%] tracking-[-0.6px]'>{indexKey}</h4>
 
             <div className='relative'>
                 <Image src={image} alt='unsplash6.svg' />
