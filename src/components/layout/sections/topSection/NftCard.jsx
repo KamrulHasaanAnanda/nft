@@ -22,13 +22,13 @@ const NFTCard = () => {
     ];
 
     return (
-        <div className='relative sm:min-h-[400px] lg:min-h-full'>
+        <div className='relative min-h-[300px] sm:min-h-[400px]'>
             {cards.map((card, index) => (
                 <div
                     key={card.id}
-                    className={`absolute rounded-3xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out`}
+                    className={`absolute translate-x-[30px]  sm:translate-x-[50px]  rounded-3xl w-[85%] sm:w-[90%] overflow-hidden shadow-lg transition-all duration-300 ease-in-out`}
                     style={{
-                        width: card.width,
+
                         height: card.height,
                         left: `${index * 16}px`,
                         top: `${index * 16}px`,
@@ -69,7 +69,7 @@ const NFTCard = () => {
 
                 </div>
             ))}
-            <div className="absolute left-[-50px] top-1/2 h-24 w-24 rounded-[50%] flex items-center justify-center transform -translate-y-1/2 shadow-md z-50 bg-[#ffe0d4]">
+            <div className="absolute left-[10px] sm:left-[5px] top-1/2 h-24 w-24 rounded-[50%] flex items-center justify-center transform -translate-y-1/2 shadow-md z-50 bg-[#ffe0d4]">
                 <Image src={auction} alt='auction' height={100} width={100} />
             </div>
         </div>
