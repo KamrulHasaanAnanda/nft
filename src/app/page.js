@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       <HeaderComponent />
-      {/* <TopSection />
+      {/* <TopSection /> */}
       <NoticeSection />
-      <CollectionSection /> */}
+      <CollectionSection />
       <CollectionFeatures />
       <CreateSellNftsSection />
       <DiscoverSection />

@@ -4,9 +4,10 @@ import FirstSection from './FirstSection'
 import SecondSection from './SecondSection'
 import ThirdSection from './ThirdSection'
 
+
 function CollectionSection() {
     return (
-        <section className='p-16 bg-white flex items-center gap-16'>
+        <section className='py-16 px-3 sm:px-10 md:px-16 bg-white flex items-center justify-between gap-5'>
             <FirstSection />
             <SecondSection />
             <ThirdSection />
