@@ -15,8 +15,8 @@ export default function Home() {
       {/* <TopSection />
       <NoticeSection />
       <CollectionSection />
-      <CollectionFeatures />
-      <CreateSellNftsSection /> */}
+      <CollectionFeatures /> */}
+      <CreateSellNftsSection />
       <DiscoverSection />
       <Footer />
 
