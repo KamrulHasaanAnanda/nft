@@ -39,7 +39,7 @@ const NFTCard = () => {
                 // onMouseLeave={() => setHoveredCard(1)}
                 >
                     <div className="relative w-full h-full">
-                        <Image src={card.image} layout="fill" objectFit="cover" />
+                        <Image src={card.image} fill className='object-cover' alt='' />
                     </div>
                     <div className="absolute inset-0 p-4 flex flex-col justify-between">
                         <div>

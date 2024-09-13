@@ -33,14 +33,14 @@ function Footer() {
                     Market Place
                 </p>
 
-                <ul class="my-4">
-                    <li class="nft-list-item">All NFTs</li>
-                    <li class="nft-list-item">New</li>
-                    <li class="nft-list-item">Art</li>
-                    <li class="nft-list-item">Sports</li>
-                    <li class="nft-list-item">Utility</li>
-                    <li class="nft-list-item">Music</li>
-                    <li class="nft-list-item">Domain Name</li>
+                <ul classname="my-4">
+                    <li classname="nft-list-item">All NFTs</li>
+                    <li classname="nft-list-item">New</li>
+                    <li classname="nft-list-item">Art</li>
+                    <li classname="nft-list-item">Sports</li>
+                    <li classname="nft-list-item">Utility</li>
+                    <li classname="nft-list-item">Music</li>
+                    <li classname="nft-list-item">Domain Name</li>
                 </ul>
             </div>
             <div>
@@ -48,11 +48,11 @@ function Footer() {
                     My Account
                 </p>
 
-                <ul class="my-4">
-                    <li class="nft-list-item">Profile</li>
-                    <li class="nft-list-item">Favorite</li>
-                    <li class="nft-list-item">My Collections</li>
-                    <li class="nft-list-item">Settings</li>
+                <ul classname="my-4">
+                    <li classname="nft-list-item">Profile</li>
+                    <li classname="nft-list-item">Favorite</li>
+                    <li classname="nft-list-item">My Collections</li>
+                    <li classname="nft-list-item">Settings</li>
                 </ul>
             </div>
             <div className=' w-full sm:w-1/2 lg:w-1/3'>

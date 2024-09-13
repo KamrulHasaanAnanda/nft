@@ -7,7 +7,7 @@ function DiscoverCarts({ image, avatarImages, title }) {
     return (
         <div className='rounded-[13px] border border-[#F2F2F280] bg-white w-full sm:min-w-[260px] p-3'>
             <div className='relative h-56'>
-                <Image src={image} alt='CreateSellNftsSection1' layout='fill' />
+                <Image src={image} alt='CreateSellNftsSection1' fill />
                 <div className="flex items-center absolute left-[20px] bottom-[-20px]">
                     <div className="flex -space-x-4">
                         {avatarImages.map((image, index) => (

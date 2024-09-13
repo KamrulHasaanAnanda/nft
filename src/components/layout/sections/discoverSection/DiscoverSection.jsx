@@ -18,57 +18,59 @@ function DiscoverSection() {
         avatar,
         avatar,
     ];
+    // console.log('images', images)
 
     let discoverCarts = [{
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
     {
-        image: CreateSellNftsSection1, avatarImages: images, title: "ArtCrypto"
+        image: CreateSellNftsSection1, avatarImages: [...images], title: "ArtCrypto"
     },
 
     ]
+
     return (
         <section className="bg-[rgba(217,224,236,0.20)] py-16 px-5 sm:px-10 md:px-16 backdrop-blur-[25px]">
 
@@ -99,8 +101,8 @@ function DiscoverSection() {
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4'>
 
                 {
-                    discoverCarts.map(discoverCart => (
-                        <DiscoverCarts image={discoverCart.image} avatarImages={discoverCart.avatarImages} title={discoverCart.title} />
+                    discoverCarts.map((discoverCart, index) => (
+                        <DiscoverCarts key={index} image={discoverCart.image} avatarImages={discoverCart.avatarImages} title={discoverCart.title} />
 
                     ))
                 }
