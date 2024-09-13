@@ -8,11 +8,15 @@ import CreateSellNftsSectionS3 from '../../../../../public/img/3.jpeg'
 
 const NFTCard = () => {
     const [hoveredCard, setHoveredCard] = useState(null);
+    // console.log('hoveredCard', hoveredCard)
+
+
 
     const cards = [
-        { id: 1, image: CreateSellNftsSection1, gradient: 'from-blue-400 to-purple-600' },
-        { id: 2, image: CreateSellNftsSectionM2, gradient: 'from-purple-500 to-pink-500' },
-        { id: 3, image: CreateSellNftsSectionS3, gradient: 'from-orange-400 to-pink-500' },
+        { id: 1, image: CreateSellNftsSection1, height: hoveredCard === 1 ? "100%" : "90%", width: "90%", zIndex: hoveredCard === 1 ? 40 : 30 },
+        { id: 2, image: CreateSellNftsSectionM2, height: hoveredCard === 1 ? "100%" : "80%", width: "90%", zIndex: hoveredCard === 2 ? 40 : 20 },
+        { id: 3, image: CreateSellNftsSectionS3, height: hoveredCard === 1 ? "100%" : "70%", width: "90%", zIndex: hoveredCard === 3 ? 40 : 10 },
+
     ];
 
     return (
@@ -22,17 +26,20 @@ const NFTCard = () => {
                     key={card.id}
                     className={`absolute rounded-3xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out`}
                     style={{
-                        width: index === 0 ? '280px' : index === 1 ? '260px' : '240px',
-                        height: index === 0 ? '320px' : index === 1 ? '300px' : '280px',
+                        width: card.width,
+                        height: card.height,
                         left: `${index * 16}px`,
-                        top: `${index * 8}px`,
-                        zIndex: 30 - index * 10,
-                        transform: hoveredCard === card.id ? 'scale(1.05) translateY(-10px)' : 'scale(1) translateY(0)',
+                        top: `${index * 16}px`,
+                        zIndex: card.zIndex,
+                        // transform: hoveredCard === card.id ? 'scale(1.05) translateY(-10px)' : 'scale(1) translateY(0)',
                     }}
-                    onMouseEnter={() => setHoveredCard(card.id)}
-                    onMouseLeave={() => setHoveredCard(null)}
+                // onMouseEnter={() => setHoveredCard(card.id)}
+                // onMouseLeave={() => setHoveredCard(1)}
                 >
-                    <Image src={card.image} layout="fill" objectFit="cover" />
+                    <div className="relative w-full h-full">
+                        <Image src={card.image} layout="fill" objectFit="cover" />
+                    </div>
+
                     {index === 0 && (
                         <>
                             <div className="absolute inset-0 p-4 flex flex-col justify-between">

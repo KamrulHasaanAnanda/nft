@@ -9,9 +9,9 @@ import NFTCard from './NftCard'
 
 function TopSection() {
     return (
-        <section className='p-16 w-full flex items-start gap-7'>
+        <section className='p-16 w-full flex gap-12 justify-between items-stretch'>
 
-            <div className='w-1/2'>
+            <div className='w-[60%]'>
                 <h1 className='text-black font-integral text-[40px] font-normal tracking-[2px]'>
 
                     Discover, and collect Digital Art  NFTs
@@ -35,7 +35,7 @@ function TopSection() {
 
                 </div >
             </div >
-            <div className='w-1/2 relative '>
+            <div className='w-[40%] relative '>
                 <NFTCard />
             </div>
         </section >
