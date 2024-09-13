@@ -1,0 +1,74 @@
+"use client"
+import React, { useState } from 'react';
+import Image from 'next/image';
+import auction from '../../../../../public/img/auction.svg';
+import CreateSellNftsSection1 from '../../../../../public/img/1.jpeg'
+import CreateSellNftsSectionM2 from '../../../../../public/img/2.jpeg'
+import CreateSellNftsSectionS3 from '../../../../../public/img/3.jpeg'
+
+const NFTCard = () => {
+    const [hoveredCard, setHoveredCard] = useState(null);
+
+    const cards = [
+        { id: 1, image: CreateSellNftsSection1, gradient: 'from-blue-400 to-purple-600' },
+        { id: 2, image: CreateSellNftsSectionM2, gradient: 'from-purple-500 to-pink-500' },
+        { id: 3, image: CreateSellNftsSectionS3, gradient: 'from-orange-400 to-pink-500' },
+    ];
+
+    return (
+        <>
+            {cards.map((card, index) => (
+                <div
+                    key={card.id}
+                    className={`absolute rounded-3xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out`}
+                    style={{
+                        width: index === 0 ? '280px' : index === 1 ? '260px' : '240px',
+                        height: index === 0 ? '320px' : index === 1 ? '300px' : '280px',
+                        left: `${index * 16}px`,
+                        top: `${index * 8}px`,
+                        zIndex: 30 - index * 10,
+                        transform: hoveredCard === card.id ? 'scale(1.05) translateY(-10px)' : 'scale(1) translateY(0)',
+                    }}
+                    onMouseEnter={() => setHoveredCard(card.id)}
+                    onMouseLeave={() => setHoveredCard(null)}
+                >
+                    <Image src={card.image} layout="fill" objectFit="cover" />
+                    {index === 0 && (
+                        <>
+                            <div className="absolute inset-0 p-4 flex flex-col justify-between">
+                                <div>
+                                    <h2 className="text-white text-xl font-bold">Abstr Gradient NFT</h2>
+                                    <div className="flex items-center mt-2">
+                                        <div className="w-6 h-6 rounded-full bg-gray-300 mr-2"></div>
+                                        <span className="text-white text-sm">Arkhan17</span>
+                                    </div>
+                                </div>
+                                <div className="bg-white bg-opacity-20 rounded-lg p-3 backdrop-blur-sm">
+                                    <div className="flex justify-between items-center">
+                                        <div>
+                                            <p className="text-white text-xs">Current Bid</p>
+                                            <p className="text-white font-bold">0.25 ETH</p>
+                                        </div>
+                                        <div>
+                                            <p className="text-white text-xs">Ends in</p>
+                                            <p className="text-white font-bold">12h 43m 42s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="absolute top-4 left-4 bg-white rounded-full px-3 py-1 text-xs font-semibold flex items-center">
+                                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                LIVE AUCTION
+                            </div>
+                        </>
+                    )}
+                </div>
+            ))}
+            <div className="absolute -left-4 top-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center transform -translate-y-1/2 shadow-md z-50">
+                <Image src={auction} alt='auction' width={20} height={20} />
+            </div>
+        </>
+    );
+};
+
+export default NFTCard;
