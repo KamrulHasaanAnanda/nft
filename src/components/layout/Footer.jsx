@@ -11,7 +11,7 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 function Footer() {
     return (
-        <footer className='bg-white px-5 sm:px-10 md:px-16  py-16 flex items-start justify-between gap-6 flex-wrap lg:flex-nowrap'>
+        <footer className='bg-white px-3 sm:px-10 md:px-16  py-16 flex items-start justify-between gap-6 flex-wrap lg:flex-nowrap'>
 
             <div className=' w-full sm:w-1/2 lg:w-1/3'>
                 <h4 className="text-[#000] font-integral text-2xl font-bold">
@@ -63,10 +63,10 @@ function Footer() {
                 <p className='my-6 text-[#363639] font-dm-sans text-sm font-normal leading-[160%]'>
                     Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating NFTs.
                 </p>
-                <div className='rounded-[45.595px] border-2 border-[#F1F1F1] bg-white h-14 flex justify-between items-center gap-3 p-4'>
-                    <input className='border-none focus:border-none focus:ring-0' placeholder='Enter your email address..' />
+                <div className='rounded-[45.595px] border-2 border-[#F1F1F1] bg-white h-14 flex justify-between items-center p-1'>
+                    <input className='border-none focus:border-none focus:ring-0 w-1/2 sm:w-10/12' placeholder='Enter your email address..' />
 
-                    <Button className="rounded-[45px] h-[30px] bg-[#2639ED] text-white font-dm-sans text-[12.159px] font-normal tracking-[0.79px]">
+                    <Button className="rounded-[45px] sm:w-[140px] h-[46px] bg-[#2639ED] text-white font-dm-sans text-[12.159px] font-normal tracking-[0.79px]">
                         Subscibe Now
                     </Button>
 
