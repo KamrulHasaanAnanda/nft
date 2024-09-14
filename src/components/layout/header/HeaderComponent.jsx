@@ -8,7 +8,7 @@ const HeaderComponent = () => {
     const navItems = ['Marketplace', 'Resource', 'About']
 
     return (
-        <header className="w-full h-20 flex justify-between items-center gap-3 px-3 sm:px-10 md:px-16 py-2 border-b border-[#EFEFEF]">
+        <header className="w-full h-20 flex justify-between items-center gap-3 px-4 sm:px-10 md:px-16 py-2 border-b border-[#EFEFEF]">
             <h1 className="text-[#3D00B7] font-integral text-2xl font-bold">
                 NFters
             </h1>

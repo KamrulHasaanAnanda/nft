@@ -16,7 +16,7 @@ const Footer = () => {
     const accountItems = ['Profile', 'Favorite', 'My Collections', 'Settings']
 
     return (
-        <footer className='bg-white px-3 sm:px-10 md:px-16 py-16 flex flex-wrap lg:flex-nowrap items-start justify-between gap-6'>
+        <footer className='bg-white px-4 sm:px-10 md:px-16 py-16 flex flex-wrap lg:flex-nowrap items-start justify-between gap-6'>
             {/* Company Info */}
             <div className='w-full sm:w-1/2 lg:w-1/3'>
                 <h4 className="text-[#000] font-integral text-2xl font-bold">NFters</h4>

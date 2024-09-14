@@ -7,7 +7,7 @@ import NoticeCards from './NoticeCards'
 function NoticeSection() {
     return (
 
-        <section className="bg-[rgba(217,224,236,0.20)]  py-16 px-3 sm:px-10 md:px-16 backdrop-blur-[25px] gap-5  flex justify-center flex-wrap sm:flex-nowrap sm:items-start lg:items-center">
+        <section className="bg-[rgba(217,224,236,0.20)]  py-16 px-4 sm:px-10 md:px-16 backdrop-blur-[25px] gap-5  flex justify-center flex-wrap sm:flex-nowrap sm:items-start lg:items-center">
             <h1 className='text-black font-integral text-[28px] font-bold"'>
                 The amazing NFT art of the world here
             </h1>

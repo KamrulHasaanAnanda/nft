@@ -9,7 +9,7 @@ import NFTCard from './NftCard'
 
 function TopSection() {
     return (
-        <section className=' py-16 px-3 sm:px-10 md:px-16 w-full flex gap-12 justify-between items-stretch flex-wrap sm:flex-nowrap'>
+        <section className=' py-16 px-4 sm:px-10 md:px-16 w-full flex gap-12 justify-between items-stretch flex-wrap sm:flex-nowrap'>
 
             <div className=' sm:w-[40%] lg:w-[60%]'>
                 <h1 className='text-black font-integral text-3xl lg:text-[40px] font-normal tracking-[2px]'>
