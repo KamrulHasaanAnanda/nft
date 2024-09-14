@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 function SecondSectionsSubs({ image, title, eImage, active }) {
     return (
-        <div className='flex items-start gap-2 mb-5'>
+        <div className='flex items-start sm:flex-wrap lg:flex-nowrap gap-2 mb-5'>
             <Image src={image} alt='image' className='aspect-square' />
             <div>
                 <h4 className='text-black font-dm-sans text-xl font-bold tracking-tighter	'>

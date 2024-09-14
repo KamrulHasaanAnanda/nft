@@ -7,7 +7,7 @@ import ethiriamBlack from '../../../../../public/img/ethiriamBlack.svg'
 function ThirdSectionTopCollector({ indexKey, image, verified, name, value, positiveVal, positive }) {
 
     return (
-        <div classname="flex gap-6 lg:gap-2 items-center border-b border-[#F0F0F0] pb-3 mt-5 lg:justify-between">
+        <div className={`flex gap-6 lg:gap-2 items-center md:flex-wrap lg:flex-nowrap  ${indexKey !== 5 && 'border-b border-[#F0F0F0]'} pb-3 mt-5 lg:justify-between`}>
             <h4 className='text-black text-center font-dm-sans text-2xl font-bold leading-[103%] tracking-[-0.6px]'>{indexKey}</h4>
 
             <div className='relative'>
@@ -18,7 +18,7 @@ function ThirdSectionTopCollector({ indexKey, image, verified, name, value, posi
                 }
             </div>
             <div>
-                <p className='text-black font-dm-sans text-base font-normal leading-[103%] tracking-[-0.4px]'>
+                <p className='text-black font-dm-sans text-base font-normal leading-[103%] tracking-[-0.4px] truncate '>
                     {name}
                 </p>
                 <div className='flex items-center gap-2 mt-3'>
