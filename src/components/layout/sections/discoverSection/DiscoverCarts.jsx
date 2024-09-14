@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 const DiscoverCarts = ({ image, avatarImages, title }) => {
     return (
-        <div className='rounded-[13px] border border-[#F2F2F280] bg-white w-full sm:min-w-[260px] p-3 transition-shadow hover:shadow-lg'>
+        <div className='rounded-[13px] border border-[#F2F2F280] bg-white w-full sm:min-w-[200px] p-3 transition-shadow hover:shadow-lg'>
             <div className='relative h-56'>
                 <Image src={image} alt={title} className='rounded-[13px] object-cover' fill />
                 <div className="flex items-center absolute left-[20px] bottom-[-20px]">

@@ -17,7 +17,7 @@ function CollectionFeatures() {
                 Collection Featured NFTs
             </h2>
 
-            <div className='flex justify-between items-center gap-3 my-6 flex-wrap sm:flex-nowrap'>
+            <div className='flex justify-between items-center gap-2 sm:gap-3 my-6 flex-wrap sm:flex-nowrap'>
 
                 {FEATURED_COLLECTIONS.map(({ id, image }) => (
                     <Collections key={id} image={image} />

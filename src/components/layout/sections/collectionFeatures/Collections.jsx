@@ -10,12 +10,15 @@ const COLLECTION_IMAGES = [
 
 function Collections({ image }) {
     return (
-        <div className='w-full'>
-            <div className='flex flex-col sm:flex-row gap-3'>
-                <Image src={image} alt='Main collection image' width={265} height={272} className="object-cover" />
-                <div className='grid grid-cols-3 sm:grid-cols-1 gap-3'>
+        <div className=' w-full sm:w-[48%] md:w-1/3'>
+            <div className='flex flex-row sm:flex-col lg:flex-row gap-3'>
+                <div className='relative '>
+
+                    <Image src={image} alt='Main collection image' width={265} height={272} className="object-cover" />
+                </div>
+                <div className='flex flex-col sm:flex-row lg:flex-col gap-3'>
                     {COLLECTION_IMAGES.map((img, index) => (
-                        <Image key={index} src={img.src} alt={img.alt} width={80} height={80} className="object-cover" />
+                        <Image key={index} src={img.src} alt={img.alt} width={103} height={90} className="object-cover" />
                     ))}
                 </div>
             </div>
