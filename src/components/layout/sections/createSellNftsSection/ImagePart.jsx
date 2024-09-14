@@ -7,7 +7,7 @@ import avatar from '../../../../../public/img/avatar.svg'
 function ImagePart() {
 
     return (
-        <div className='flex items-center gap-6 sm:gap-14 w-full lg:w-1/2 justify-between'>
+        <div className='flex items-center gap-3 sm:gap-14 w-full lg:w-1/2 justify-between'>
             <div className='w-1/2 flex flex-col items-end gap-7'>
                 <div className='relative min-w-[90%]  min-h-[150px] sm:min-w-[300px] sm:min-h-[300px]'>
                     <Image src={CreateSellNftsSection1} alt='CreateSellNftsSection1' fill />
@@ -21,9 +21,9 @@ function ImagePart() {
 
             </div>
 
-            <div className='w-1/2 flex justify-center'>
-                <div className='relative'>
-                    <Image src={CreateSellNftsSectionM2} alt='CreateSellNftsSectionM2' width={240} height={260} />
+            <div className='w-1/2 flex justify-center sm:justify-start'>
+                <div className='relative min-w-[70%] min-h-[150px] sm:min-w-[200px] xl:w-[240px] sm:min-h-[260px] '>
+                    <Image src={CreateSellNftsSectionM2} alt='CreateSellNftsSectionM2' fill />
                     <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
 
                 </div>
