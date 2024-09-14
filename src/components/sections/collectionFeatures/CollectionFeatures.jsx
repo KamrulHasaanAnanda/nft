@@ -1,5 +1,5 @@
 import React from 'react'
-import unsplash from '../../../../../public/img/unsplash1.png'
+import unsplash from '../../../../public/img/unsplash1.png'
 
 
 import Collections from './Collections'

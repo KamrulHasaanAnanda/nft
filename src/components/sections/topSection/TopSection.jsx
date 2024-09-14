@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
-import dots from '../../../../../public/img/Dots.svg'
-import Image from 'next/image'
+// import dots from '../../../../../public/img/Dots.svg'
+// import Image from 'next/image'
 import Counts from './Counts'
 import NFTCard from './NftCard'
 

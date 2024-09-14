@@ -1,7 +1,7 @@
 import React from 'react'
-import unsplash2 from '../../../../../public/img/unsplash2.png'
+import unsplash2 from '../../../../public/img/unsplash2.png'
 
-import ethereumGreen from '../../../../../public/img/ethereumGreen.svg'
+import ethereumGreen from '../../../../public/img/ethereumGreen.svg'
 
 import SecondSectionsSubs from './SecondSectionsSubs'
 function SliderSection() {

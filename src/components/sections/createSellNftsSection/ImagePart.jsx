@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import CreateSellNftsSection1 from '../../../../../public/img/CreateSellNftsSection1.png'
-import CreateSellNftsSectionM2 from '../../../../../public/img/CreateSellNftsSectionM2.png'
-import CreateSellNftsSectionS3 from '../../../../../public/img/CreateSellNftsSectionS3.png'
-import avatar from '../../../../../public/img/avatar.svg'
+import CreateSellNftsSection1 from '../../../../public/img/CreateSellNftsSection1.png'
+import CreateSellNftsSectionM2 from '../../../../public/img/CreateSellNftsSectionM2.png'
+import CreateSellNftsSectionS3 from '../../../../public/img/CreateSellNftsSectionS3.png'
+import avatar from '../../../../public/img/avatar.svg'
 function ImagePart() {
 
     return (

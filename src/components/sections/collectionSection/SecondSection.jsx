@@ -1,8 +1,8 @@
 import React from 'react'
 
-import unsplash5 from '../../../../../public/img/unsplash5.svg'
-import unsplash4 from '../../../../../public/img/unsplash4.svg'
-import unsplash6 from '../../../../../public/img/unsplash6.svg'
+import unsplash5 from '../../../../public/img/unsplash5.svg'
+import unsplash4 from '../../../../public/img/unsplash4.svg'
+import unsplash6 from '../../../../public/img/unsplash6.svg'
 
 
 

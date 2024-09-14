@@ -1,11 +1,11 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import auction from '../../../../../public/img/auction.svg';
-import CreateSellNftsSection1 from '../../../../../public/img/1.jpeg'
-import CreateSellNftsSectionM2 from '../../../../../public/img/2.jpeg'
-import CreateSellNftsSectionS3 from '../../../../../public/img/3.jpeg'
-import avatar from '../../../../../public/img/avatar.svg'
+import auction from '../../../../public/img/auction.svg';
+import CreateSellNftsSection1 from '../../../../public/img/1.jpeg'
+import CreateSellNftsSectionM2 from '../../../../public/img/2.jpeg'
+import CreateSellNftsSectionS3 from '../../../../public/img/3.jpeg'
+import avatar from '../../../../public/img/avatar.svg'
 
 const NFTCard = () => {
     const [hoveredCard, setHoveredCard] = useState(null);

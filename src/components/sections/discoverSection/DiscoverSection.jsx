@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import filter from '../../../../../public/img/filter.svg'
-// import CreateSellNftsSection1 from '../../../../../public/img/CreateSellNftsSection1.png'
-import CreateSellNftsSection2 from '../../../../../public/img/1.jpeg'
-import CreateSellNftsSection3 from '../../../../../public/img/2.jpeg'
-import CreateSellNftsSection4 from '../../../../../public/img/3.jpeg'
-import avatar from '../../../../../public/img/avatar.svg'
+import filter from '../../../../public/img/filter.svg'
+
+import CreateSellNftsSection2 from '../../../../public/img/1.jpeg'
+import CreateSellNftsSection3 from '../../../../public/img/2.jpeg'
+import CreateSellNftsSection4 from '../../../../public/img/3.jpeg'
+import avatar from '../../../../public/img/avatar.svg'
 import DiscoverCarts from './DiscoverCarts'
 
 const categories = ['All Categories', 'Art', 'Celebrities', 'Gaming', 'Sport', 'Music', 'Crypto']

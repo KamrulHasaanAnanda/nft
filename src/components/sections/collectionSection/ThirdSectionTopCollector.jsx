@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import verify from '../../../../../public/img/verify.svg'
-import ethiriamBlack from '../../../../../public/img/ethiriamBlack.svg'
+import verify from '../../../../public/img/verify.svg'
+import ethiriamBlack from '../../../../public/img/ethiriamBlack.svg'
 
 
 function ThirdSectionTopCollector({ indexKey, image, verified, name, value, positiveVal, positive }) {

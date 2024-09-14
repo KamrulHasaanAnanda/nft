@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-import unsplash from '../../../../../public/img/collection1.jpeg'
-import avatar from '../../../../../public/img/avatar.svg'
-import ethiriam from '../../../../../public/img/ethiriam.svg'
+import unsplash from '../../../../public/img/collection1.jpeg'
+import avatar from '../../../../public/img/avatar.svg'
+import ethiriam from '../../../../public/img/ethiriam.svg'
 import SliderSection from './SliderSection'
 
 const FirstSection = () => {

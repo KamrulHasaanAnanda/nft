@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from '../../../../../public/img/avatar.svg'
+import avatar from '../../../../public/img/avatar.svg'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 function SecondSectionsSubs({ image, title, eImage, active }) {

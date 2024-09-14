@@ -1,6 +1,6 @@
 import React from 'react'
-import chartSquare from '../../../../../public/img/chartSquare.svg'
-import cardTick from '../../../../../public/img/cardTick.svg'
+import chartSquare from '../../../../public/img/chartSquare.svg'
+import cardTick from '../../../../public/img/cardTick.svg'
 
 import NoticeCards from './NoticeCards'
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import { Button } from '../ui/button'
-import fbicon from '../../../public/img/fbicon.svg'
-import twitter from '../../../public/img/twitter.svg'
-import linkedln from '../../../public/img/linkedln.svg'
+import { Button } from './ui/button'
+import fbicon from '../../public/img/fbicon.svg'
+import twitter from '../../public/img/twitter.svg'
+import linkedln from '../../public/img/linkedln.svg'
 
 const Footer = () => {
     const socialIcons = [
