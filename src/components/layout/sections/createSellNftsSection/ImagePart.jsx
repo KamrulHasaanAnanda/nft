@@ -5,16 +5,18 @@ import CreateSellNftsSectionM2 from '../../../../../public/img/CreateSellNftsSec
 import CreateSellNftsSectionS3 from '../../../../../public/img/CreateSellNftsSectionS3.png'
 import avatar from '../../../../../public/img/avatar.svg'
 function ImagePart() {
+
+
     return (
         <div className='flex items-center gap-14 w-full lg:w-1/2'>
             <div>
-                <div className='relative'>
+                <div className='relative '>
                     <Image src={CreateSellNftsSection1} alt='CreateSellNftsSection1' width={300} height={300} />
                     <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
                 </div>
 
                 <div className='relative flex justify-end mt-8'>
-                    <Image src={CreateSellNftsSectionS3} alt='CreateSellNftsSectionS3' />
+                    <Image src={CreateSellNftsSectionS3} alt='CreateSellNftsSectionS3' width={190} height={215} />
                     <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
                 </div>
 
