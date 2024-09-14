@@ -14,11 +14,11 @@ function Collections({ image }) {
             <div className='flex flex-row sm:flex-col lg:flex-row gap-3'>
                 <div className='relative '>
 
-                    <Image src={image} alt='Main collection image' width={265} height={272} className="object-cover" />
+                    <Image src={image} alt='Main collection image' width={365} height={300} className="object-cover" />
                 </div>
                 <div className='flex flex-col sm:flex-row lg:flex-col gap-3'>
                     {COLLECTION_IMAGES.map((img, index) => (
-                        <Image key={index} src={img.src} alt={img.alt} width={103} height={90} className="object-cover" />
+                        <Image key={index} src={img.src} alt={img.alt} width={110} height={90} className="object-cover" />
                     ))}
                 </div>
             </div>
