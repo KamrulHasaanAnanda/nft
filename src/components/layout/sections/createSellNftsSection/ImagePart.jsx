@@ -6,11 +6,10 @@ import CreateSellNftsSectionS3 from '../../../../../public/img/CreateSellNftsSec
 import avatar from '../../../../../public/img/avatar.svg'
 function ImagePart() {
 
-
     return (
-        <div className='flex items-center gap-6 sm:gap-14 w-full lg:w-1/2'>
-            <div>
-                <div className='relative '>
+        <div className='flex items-center gap-14 w-full lg:w-1/2'>
+            <div className='w-1/2 flex flex-col items-end'>
+                <div className='relative'>
                     <Image src={CreateSellNftsSection1} alt='CreateSellNftsSection1' width={300} height={300} />
                     <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
                 </div>
