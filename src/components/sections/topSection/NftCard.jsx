@@ -22,15 +22,15 @@ const NFTCard = () => {
     ];
 
     return (
-        <div className='relative min-h-[300px] sm:min-h-[400px]'>
+        <div className='relative min-h-[300px] sm:min-h-[400px] xl:min-h-[500px]'>
             {cards.map((card, index) => (
                 <div
                     key={card.id}
-                    className={`absolute translate-x-[30px]  sm:translate-x-[50px]  rounded-3xl w-[85%] sm:w-[90%] overflow-hidden shadow-lg transition-all duration-300 ease-in-out`}
+                    className={`absolute translate-x-[20px]  sm:translate-x-[50px]  rounded-3xl w-[80%] sm:w-[90%] overflow-hidden shadow-lg transition-all duration-300 ease-in-out`}
                     style={{
 
                         height: card.height,
-                        left: `${index * 16}px`,
+                        left: `${index * 25}px`,
                         top: `${index * 16}px`,
                         zIndex: card.zIndex,
                         // transform: hoveredCard === card.id ? 'scale(1.05) translateY(-10px)' : 'scale(1) translateY(0)',
