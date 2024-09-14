@@ -7,23 +7,26 @@ import avatar from '../../../../../public/img/avatar.svg'
 function ImagePart() {
 
     return (
-        <div className='flex items-center gap-14 w-full lg:w-1/2'>
-            <div className='w-1/2 flex flex-col items-end'>
-                <div className='relative'>
-                    <Image src={CreateSellNftsSection1} alt='CreateSellNftsSection1' width={300} height={300} />
+        <div className='flex items-center gap-6 sm:gap-14 w-full lg:w-1/2 justify-between'>
+            <div className='w-1/2 flex flex-col items-end gap-7'>
+                <div className='relative min-w-[90%]  min-h-[150px] sm:min-w-[300px] sm:min-h-[300px]'>
+                    <Image src={CreateSellNftsSection1} alt='CreateSellNftsSection1' fill />
                     <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
                 </div>
 
-                <div className='relative flex justify-end mt-8'>
-                    <Image src={CreateSellNftsSectionS3} alt='CreateSellNftsSectionS3' width={190} height={215} />
+                <div className='relative  sm:min-w-[200px] sm:min-h-[200px] min-w-[70%] min-h-[100px]'>
+                    <Image src={CreateSellNftsSectionS3} alt='CreateSellNftsSectionS3' fill />
                     <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
                 </div>
 
             </div>
 
-            <div className='relative'>
-                <Image src={CreateSellNftsSectionM2} alt='CreateSellNftsSectionM2' width={240} height={260} />
-                <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
+            <div className='w-1/2 flex justify-center'>
+                <div className='relative'>
+                    <Image src={CreateSellNftsSectionM2} alt='CreateSellNftsSectionM2' width={240} height={260} />
+                    <Image src={avatar} alt='avatar' className='absolute bottom-[-22px] right-[-22px]' />
+
+                </div>
             </div>
 
 
