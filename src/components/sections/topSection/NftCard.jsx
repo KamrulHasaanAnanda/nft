@@ -14,9 +14,9 @@ const NFTCard = () => {
 
 
     const cards = [
-        { id: 1, image: CreateSellNftsSection1, height: hoveredCard === 1 ? "100%" : "90%", width: "90%", zIndex: hoveredCard === 1 ? 40 : 30, name: "Abstr Gradient NFT", owner: "Arkhan17" },
-        { id: 2, image: CreateSellNftsSectionM2, height: hoveredCard === 1 ? "100%" : "80%", width: "90%", zIndex: hoveredCard === 2 ? 40 : 20, name: "Abstr NFT", owner: "Arkhan17" },
-        { id: 3, image: CreateSellNftsSectionS3, height: hoveredCard === 1 ? "100%" : "70%", width: "90%", zIndex: hoveredCard === 3 ? 40 : 10, name: " Gradient NFT", owner: "Arkhan17" },
+        { id: 1, image: CreateSellNftsSection1, left: 0, height: "90%", width: "90%", zIndex: hoveredCard === 1 ? 40 : 30, name: "Abstr Gradient NFT", owner: "Arkhan17" },
+        { id: 2, image: CreateSellNftsSectionM2, left: hoveredCard === 2 ? 0 : 25, height: "80%", width: "90%", zIndex: hoveredCard === 2 ? 40 : 20, name: "Abstr NFT", owner: "Arkhan17" },
+        { id: 3, image: CreateSellNftsSectionS3, left: hoveredCard === 3 ? 0 : 50, height: "70%", width: "90%", zIndex: hoveredCard === 3 ? 40 : 10, name: " Gradient NFT", owner: "Arkhan17" },
 
 
     ];
@@ -30,13 +30,15 @@ const NFTCard = () => {
                     style={{
 
                         height: card.height,
-                        left: `${index * 25}px`,
+                        left: `${card?.left}px`,
                         top: `${index * 16}px`,
                         zIndex: card.zIndex,
                         // transform: hoveredCard === card.id ? 'scale(1.05) translateY(-10px)' : 'scale(1) translateY(0)',
                     }}
-                // onMouseEnter={() => setHoveredCard(card.id)}
-                // onMouseLeave={() => setHoveredCard(1)}
+                // onMouseEnter={() => {
+                //     card?.id !== hoveredCard && setHoveredCard(card.id)
+                // }}
+                // onMouseLeave={() => setHoveredCard(null)}
                 >
                     <div className="relative w-full h-full">
                         <Image src={card.image} fill className='object-cover' alt='' />
