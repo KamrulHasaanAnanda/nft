@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <HeaderComponent />
-      <TopSection />
+      {/* <TopSection /> */}
       <NoticeSection />
       <CollectionSection />
       <CollectionFeatures />
